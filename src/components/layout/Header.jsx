@@ -144,17 +144,8 @@ const Header = () => {
               </div>
             </div>
           ) : (
-            <>
-              <button 
-                className={`${formStyles.btn} ${formStyles.btnSecondary}`}
-                onClick={() => {
-                  setLoginError('');
-                  setIsLoginModalOpen(true);
-                }}
-                disabled={isLoading}
-              >
-                Login
-              </button>
+            <> 
+              {/* 移除登录按钮，这里可以放其他导航元素，或者留空 */}
             </>
           )}
         </div>
