@@ -1,0 +1,129 @@
+.aboutPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.intro {
+  margin-bottom: 3rem;
+}
+
+.bioContent {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.bioImage {
+  flex: 0 0 300px;
+}
+
+.bioImage img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bioText {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.skills, .experience, .education {
+  margin-bottom: 3rem;
+}
+
+.skillCategories {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.skillCategory {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.skillCategory h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.skillCategory ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillCategory li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.skillCategory li:last-child {
+  border-bottom: none;
+}
+
+.timeline {
+  margin-top: 1.5rem;
+}
+
+.timelineItem {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.timelineDate {
+  flex: 0 0 150px;
+  font-weight: bold;
+  padding-top: 0.25rem;
+}
+
+.timelineContent {
+  flex: 1;
+}
+
+.timelineContent h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.educationItem {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.educationItem h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .bioContent {
+    flex-direction: column;
+  }
+  
+  .bioImage {
+    flex: 0 0 auto;
+    margin-bottom: 1.5rem;
+    max-width: 250px;
+  }
+  
+  .timelineItem {
+    flex-direction: column;
+  }
+  
+  .timelineDate {
+    margin-bottom: 0.5rem;
+  }
+}
